@@ -1,0 +1,60 @@
+sudo systemctl start mysql
+sudo /etc/init.d/mysql stop
+
+mysql -u [username] -p
+
+root/root
+
+select table_name from information_schema.tables where table_schema = 'users_database';
+
+insert into employees values(1, 'jingzhi4liu@gmail.com', 'Jingzhi', 'Liu');
+
+show tables;
+
+show databases;
+
+-----------------------------------------------------------------------------
+Typescript vs Javascript #1
+
+.ts is the extension for Typescript files, while .js is for JavaScript files.
+Both are used in web-development;
+Typescript is just a syntactical super-set of JavaScript and adds more features to it, the best of which being, as the name suggests, Datatypes.
+Typescript needs to be compiled into JavaScript first to be executed in a browser (which is actually good as it makes compile-time error checking possible).
+-----------------------------------------------------------------------------
+
+Typescript vs Javascript #2
+.ts is TypeScript
+.js is JavaScript
+you can read about the difference. TypeScript is not a real language - it is merely used to add type information to JavaScript, and you must transpile/compile .ts files to .js files 
+in order to execute the code. However TypeScript is very powerful at making APIs more usable because of type information and Angular 2.0 among other libraries advocates for TS usage.
+------------------------------------------------------------------------------
+
+Typescript vs Javascript #3
+.ts identifies a TypeScript file, whereas .js files identify JavaScript files. TypeScript is Microsoft’s strict-typed superset implementation of JavaScript.
+You can learn more about TypeScript here: Microsoft/TypeScript.
+
+“ts” is the abbreviation for Typescript source code files. “js” is the same except for Javascript code.
+
+Javascript is the standard scripting language of the web. It is the only language that can be interpreted by browsers. However, there are a fair number of things people dislike about it, including that it uses dynamic rather than static typing.
+
+Typescript is a extension of Javascript created by Microsoft. It adds in static types as well as the features from the upcoming version of Javascript ES6 and ES7. Because Typescript does not run natively on browsers it must be transcompiled into regular Javascript before it will run.
+
+Here is an example of a simple averaging function in Javascript (ES5).
+
+function average(numbers) {
+	var total = 0;
+	for (var i = 0; i < numbers; i++) {
+		total += numbers[i];
+	} 
+	return total / numbers.length;
+}
+Here is the same in Typescript
+
+function average(numbers: number[]): number {
+	let total = 0;
+	for (let number of numbers) {
+		total += number;
+	} 
+	return total / numbers.length;
+}
+The difference is that Typescript allows us to declare static types for the functions parameter and return type enforcing what they ought to be. It lets us use ES6 features like the for … of loop. and the let statment.
