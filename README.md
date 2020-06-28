@@ -1,2 +1,1 @@
-# j2ee
-j2ee applications 
+Springboot application: expose a list of REST APIs
